@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1033860481005",
+    "project_id": "basecip",
+    "storage_bucket": "basecip.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1033860481005:android:6143e585fb7a917633f1e4",
+        "android_client_info": {
+          "package_name": "com.calebii.cipbase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1033860481005-5sn7u4n12svsfc8q72qt4ftptjhtjs42.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.calebii.cipbase",
+            "certificate_hash": "2e0490a043a33d772abc89696bd5135198b59e84"
+          }
+        },
+        {
+          "client_id": "1033860481005-v51n70mvug6klbodhtasf4g0sumf0oal.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPgPvmBiYvNmoyqsuXMbVWVO9o0R32El8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1033860481005-v51n70mvug6klbodhtasf4g0sumf0oal.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
