@@ -22,6 +22,14 @@
           }
         },
         {
+          "client_id": "1033860481005-7kd9b0ug0a28v3mspbi066a371827k6i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.calebii.cipbase",
+            "certificate_hash": "9c1b53799735862874da9f9c7da2475d8b07780c"
+          }
+        },
+        {
           "client_id": "1033860481005-v51n70mvug6klbodhtasf4g0sumf0oal.apps.googleusercontent.com",
           "client_type": 3
         }
