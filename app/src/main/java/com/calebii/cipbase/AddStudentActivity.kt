@@ -81,7 +81,7 @@ class AddStudentActivity : AppCompatActivity() {
             .add(student)
             .addOnSuccessListener {
                 Toast.makeText(this, "Estudiante agregado", Toast.LENGTH_SHORT).show()
-                setResult(RESULT_OK) // opcional: indicar éxito
+                setResult(RESULT_OK) // opcional indicar éxito
                 finish()
             }
             .addOnFailureListener { e ->

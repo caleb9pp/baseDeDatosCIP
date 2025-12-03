@@ -21,7 +21,7 @@ class StudentAdapter(private val students: List<Student>) :
         val student = students[position]
         with(holder.binding) {
             txtName.text = student.name
-            txtEmail.text = student.email
+            txtEmail.text = student.matricula
             txtPhone.text = "Teléfono: ${student.phone}"
             txtStatus.text = student.status
         }

@@ -3,168 +3,238 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="16dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#F4F6F9">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Nombre"
-            android:textColor="#5FA7DA"
-            android:textStyle="bold"
-            android:textSize="20dp"/>
-
-        <EditText
-            android:id="@+id/etNombre"
+        <!-- Card contenedor -->
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="text"
-            android:hint="Carlos Perez Sanchez"
-            android:background="@drawable/bg_edittext_rounded" />
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardElevation="6dp"
+            app:cardCornerRadius="16dp"
+            app:cardUseCompatPadding="true">
 
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Edad"
-            android:textColor="#5FA7DA"
-            android:textStyle="bold"
-            android:textSize="20dp"/>
-
-        <EditText
-            android:id="@+id/etedad"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="text"
-            android:hint="18"
-            android:background="@drawable/bg_edittext_rounded" />
-
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Fecha de Nacimiento"
-            android:textColor="#5FA7DA"
-            android:textStyle="bold"
-            android:textSize="20dp"/>
-
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etFecha"
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="20dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:focusable="false"
-                android:clickable="true"
-                android:background="@drawable/bg_edittext_rounded"
-                android:hint="(dd/mm/aaaa)"/>
+                android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="CURP"
-            android:textColor="#5FA7DA"
-            android:textStyle="bold"
-            android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Datos del Estudiante"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:textColor="#113B63"
+                    android:layout_marginBottom="20dp" />
 
-        <EditText
-            android:id="@+id/etCurp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="text"
-            android:hint="PEZC080706HDFRVLA8"
-            android:background="@drawable/bg_edittext_rounded" />
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Telefono"
-            android:textColor="#5FA7DA"
-            android:textStyle="bold"
-            android:textSize="20dp"/>
-        <EditText
-            android:id="@+id/etTelefono"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="phone"
-            android:hint="5512345678"
-            android:background="@drawable/bg_edittext_rounded" />
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Matricula / ID "
-            android:textColor="#5FA7DA"
-            android:textStyle="bold"
-            android:textSize="20dp"/>
+                <!-- NOMBRE -->
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre"
+                    android:textColor="#5FA7DA"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
 
-        <EditText
-            android:id="@+id/etMatricula"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="text"
-            android:hint="17307-B"
-            android:background="@drawable/bg_edittext_rounded" />
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Correo"
-            android:textColor="#5FA7DA"
-            android:textStyle="bold"
-            android:textSize="20dp"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    app:startIconDrawable="@android:drawable/ic_menu_edit"
+                    app:hintEnabled="false">
 
-        <EditText
-            android:id="@+id/etCorreo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:inputType="textEmailAddress"
-            android:hint="Carlos89@gmail.com"
-            android:background="@drawable/bg_edittext_rounded" />
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etNombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Carlos hernandez sanchez" />
+                </com.google.android.material.textfield.TextInputLayout>
 
-        <Button
-            android:id="@+id/btnGuardar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Guardar"
-            android:layout_marginTop="16dp"
-            app:backgroundTint="@null"
-            android:background="@drawable/bg_button_rounded" />
+                <!-- EDAD -->
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Edad"
+                    android:textColor="#5FA7DA"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
 
-        <Button
-            android:id="@+id/btnCancelar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Cancelar"
-            android:layout_marginTop="8dp"
-            app:backgroundTint="@null"
-            android:background="@drawable/bg_button_rounded"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:startIconDrawable="@android:drawable/ic_menu_today"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etedad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="18"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- FECHA -->
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Fecha de Nacimiento"
+                    android:textColor="#5FA7DA"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:startIconDrawable="@android:drawable/ic_menu_my_calendar"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etFecha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:hint="(dd/mm/aaaa)" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- CURP -->
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="CURP"
+                    android:textColor="#5FA7DA"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:startIconDrawable="@android:drawable/ic_menu_info_details"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etCurp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="PEZC080706HDFRVLA8"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- TELÉFONO -->
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Telefono"
+                    android:textColor="#5FA7DA"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:startIconDrawable="@android:drawable/ic_menu_call"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etTelefono"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:hint="5512345678"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- MATRÍCULA -->
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Matricula / ID "
+                    android:textColor="#5FA7DA"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:startIconDrawable="@android:drawable/ic_menu_save"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etMatricula"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="17307-B"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- CORREO -->
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Correo"
+                    android:textColor="#5FA7DA"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:startIconDrawable="@android:drawable/ic_dialog_email"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etCorreo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:hint="Carlos89@gmail.com"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- BOTONES -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnGuardar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="Guardar"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    app:cornerRadius="12dp"
+                    app:backgroundTint="#5FA7DA"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCancelar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Cancelar"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    app:cornerRadius="12dp"
+                    app:backgroundTint="#FF5252"/>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
 
     </LinearLayout>
 </ScrollView>
+
